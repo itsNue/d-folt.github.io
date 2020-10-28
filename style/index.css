@@ -121,4 +121,12 @@ footer {
     text-align: center;
 }
 
+pre {
+	max-width: 850px;
+	overflow: scroll;
+	padding: 15px 15px;
+	font-size: 14px;
+
+}
+
   
