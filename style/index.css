@@ -1,5 +1,9 @@
 /* general settings */
-
+@media screen and (max-width: 630px) {
+    body {
+        padding: 0px 40px;
+    }
+}
 body {
     background: #17191C;
     color: rgb(185, 180, 169);
