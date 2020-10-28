@@ -1,0 +1,124 @@
+/* general settings */
+
+body {
+    background: #17191C;
+    color: rgb(185, 180, 169);
+    font-family: "Fira Mono", monospace;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    padding: 10px;
+    max-width: 550px;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+header {
+    margin: 30px 0px 50px;
+}
+
+header .site-title a {
+    text-decoration: none;
+}
+
+header .devlog-title {
+    font-weight: bold;
+}
+
+header h1 a {
+    color: rgb(185, 180, 169);
+}
+
+#archive {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+  }
+
+  /*underline animation  */
+  .underline {
+    position: relative;
+  }
+  
+  .underline:hover {
+    color: rgb(211, 211, 211);
+  }
+ 
+  .underline::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgb(211, 211, 211);
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .underline:hover::before {
+    transform-origin: bottom right;
+    transform: scaleX(1);
+  }
+/* cursor animation */
+  .cursor {
+    animation: cursor 1s infinite;
+    color: rgb(211, 211, 211);
+    display: inline-block;
+    width: 10px;
+    margin-left: 5px;
+    border-radius: 1px;
+  }
+  @keyframes cursor {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+
+  }
+/* posts highlight animation */
+.highlight {
+    color:  rgb(211, 211, 211);
+    position: relative;
+    z-index: 1;
+}
+
+.highlight::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -0.25em;
+    right: -0.25em;
+    background-color:  #272A30;
+    transform-origin: bottom center;
+    transform: scaleY(0.1);
+    transition: all 0.1s ease-in-out;
+}
+
+.highlight:hover::before {
+    
+    transform: scaleY(1);
+    background-color: #272A30;
+}
+
+footer {
+    
+    margin-top: 2em;
+    display: table;
+    text-align: center;
+}
+
+  
